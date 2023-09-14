@@ -1,0 +1,40 @@
+@use "../_abstract/variables" as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: $fs-1;
+  font-family: $font-family-1;
+  line-height: 1.6;
+}
+
+button,
+input {
+  font-size: $fs-1;
+  font-family: $font-family-1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+ins,
+del {
+  line-height: 1;
+}
+
+p {
+  line-height: 23.5px;
+}

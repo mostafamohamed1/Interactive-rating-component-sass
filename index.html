@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body
+    class="p-inline-10 | min-h-full w-full | d-flex justify-center align-center | bg-v-dark-blue"
+  >
+    <main class="card | max-w-413 | d-flex | overflow-hidden | br-30">
+      <div class="p-block-31 p-inline-34 | flex-shrink-0">
+        <div class="star | d-flex align-center justify-center">
+          <img src="./images/icon-star.svg" alt="star" />
+        </div>
+        <h1 class="heading-1 | fs-2 fw-700 clr-white">How did we do?</h1>
+        <p class="text | fs-1 fw-400 clr-light-gray">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="rating | fw-700 | d-flex | clr-light-gray" id="rates">
+          <li class="mr-20 | d-flex align-center justify-center | bg-dark-blue">
+            1
+          </li>
+          <li class="mr-20 | d-flex align-center justify-center | bg-dark-blue">
+            2
+          </li>
+          <li class="mr-20 | d-flex align-center justify-center | bg-dark-blue">
+            3
+          </li>
+          <li class="mr-20 | d-flex align-center justify-center | bg-dark-blue">
+            4
+          </li>
+          <li class="d-flex align-center justify-center | bg-dark-blue">5</li>
+        </ul>
+
+        <button class="btn">submit</button>
+      </div>
+
+      <div
+        class="thank | flex-shrink-0 d-flex align-center justify-center f-direction-column text-center"
+      >
+        <div class="thank-img">
+          <img src="./images/illustration-thank-you.svg" alt="thank you" />
+        </div>
+        <p class="rateselected | d-flex align-center justify-center">
+          You selected&nbsp;<strong>4</strong>&nbsp;out of 5
+        </p>
+        <h2 class="heading-2 | fs-2 fw-700 clr-white">Thank you!</h2>
+        <p class="text | clr-white">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+@use "../_abstract/variables" as *;
+
+@each $item, $val in $default-fontSize {
+  .#{$item} {
+    font-size: $val;
+  }
+}
+
+@each $item, $val in $default-fontWeight {
+  .#{$item} {
+    font-weight: $val;
+  }
+}

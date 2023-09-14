@@ -1,0 +1,68 @@
+@use "../_abstract/mixins" as *;
+@use "../_abstract/variables" as *;
+
+// Card
+.card {
+  background-image: linear-gradient(to bottom, $natural-4, $natural-5);
+  background-size: 100% 700%;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+
+  & > div:first-child,
+  & > div:last-child {
+    transition: transform 0.4s;
+
+    &.active {
+      transform: translateX(-100%);
+    }
+  }
+
+  & > div:first-child .star {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #272e38;
+  }
+
+  & .rating {
+    margin-block: 36px 28px;
+    list-style: none;
+
+    & > li {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      line-height: 1;
+      cursor: pointer;
+
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $primary-1;
+        color: $natural-1;
+      }
+
+      &.active {
+        background-color: $natural-3;
+        color: $natural-1;
+      }
+    }
+  }
+
+  .thank {
+    padding: 33px;
+    &-img {
+      margin-bottom: 33px;
+    }
+
+    & .rateselected {
+      margin-bottom: 34px;
+      width: 195px;
+      height: 32px;
+      border-radius: 30px;
+      color: $primary-1;
+      background-color: $natural-4;
+      line-height: 1;
+    }
+  }
+}

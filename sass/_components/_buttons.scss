@@ -1,0 +1,21 @@
+@use "../_abstract/variables" as *;
+
+.btn,
+.btn:visited {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-color: $primary-1;
+  color: $natural-1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $natural-1;
+    color: $primary-1;
+  }
+}

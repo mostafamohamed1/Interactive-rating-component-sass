@@ -1,0 +1,38 @@
+@use "../_abstract/variables" as *;
+@use "../_abstract/mixins" as *;
+
+.d-flex {
+  display: flex;
+}
+
+@each $prop, $val in $default-justify-box {
+  .#{$prop} {
+    justify-content: $val;
+  }
+}
+
+@each $prop, $val in $default-align-box {
+  .#{$prop} {
+    align-items: $val;
+  }
+}
+
+@each $prop, $val in $default-direction-box {
+  .#{$prop} {
+    flex-direction: $val;
+  }
+}
+
+@include breakpoint {
+  @each $prop, $val in $default-direction-box {
+    .#{$prop}-md {
+      flex-direction: $val;
+    }
+  }
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 100%;
+}

@@ -1,0 +1,16 @@
+@use "sass:map";
+
+@use "../_abstract/variables" as *;
+@use "../_abstract/mixins" as *;
+
+@each $color, $value in $default-colors {
+  .#{$color} {
+    color: $value;
+  }
+}
+
+@each $color, $value in $default-background {
+  .#{$color} {
+    background-color: $value;
+  }
+}

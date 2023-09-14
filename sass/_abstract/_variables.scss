@@ -1,0 +1,82 @@
+// =-=-=-=-=-= font =-=-=-=-=-=
+
+// family
+$font-family-1: "Overpass", sans-serif;
+
+// size
+$fs-1: 15px;
+$fs-2: 28px;
+
+// weight
+$fw-500: 500;
+$fw-700: 700;
+
+// =-=-=-=-=-= color =-=-=-=-=-=
+
+// Primary
+
+$primary-1: hsl(25, 97%, 53%);
+
+// Neutral
+
+$natural-1: hsl(0, 0%, 100%);
+$natural-2: hsl(217, 12%, 63%);
+$natural-3: hsl(216, 12%, 54%);
+$natural-4: hsl(213, 19%, 18%);
+$natural-5: hsl(216, 12%, 8%);
+
+// =-=-=-=-=-= breakpoint =-=-=-=-=-=
+
+// No needed
+
+// Maps
+
+$default-colors: (
+  "clr-orange": $primary-1,
+  "clr-white": $natural-1,
+  "clr-light-gray": $natural-2,
+  "clr-medium-gray": $natural-3,
+  "clr-dark-blue": $natural-4,
+  "clr-v-dark-blue": $natural-5,
+) !default;
+
+$default-background: (
+  "bg-orange": $primary-1,
+  "bg-white": $natural-1,
+  "bg-light-gray": $natural-2,
+  "bg-medium-gray": $natural-3,
+  "bg-dark-blue": $natural-4,
+  "bg-v-dark-blue": $natural-5,
+) !default;
+
+$default-fontSize: (
+  "fs-1": $fs-1,
+  "fs-2": $fs-2,
+) !default;
+
+$default-fontWeight: (
+  "fw-400": $fw-500,
+  "fw-700": $fw-700,
+) !default;
+
+$default-justify-box: (
+  "justify-baseline": baseline,
+  "justify-start": flex-start,
+  "justify-end": flex-end,
+  "justify-between": space-between,
+  "justify-evenly": space-evenly,
+  "justify-around": space-around,
+  "justify-center": center,
+) !default;
+
+$default-align-box: (
+  "align-baseline": baseline,
+  "align-start": flex-start,
+  "align-end": flex-end,
+  "align-center": center,
+) !default;
+
+$default-direction-box: (
+  "f-direction-row": row,
+  "f-direction-column": column,
+) !default;
